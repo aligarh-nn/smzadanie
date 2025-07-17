@@ -8,12 +8,12 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 TOKEN = config['TELEGRAM']['BOT_TOKEN']
-bot = Bot(token=8049424222:AAFhKM19Q9eCxDd9hq2LPBxKAAOA1QnNvC4)
+bot = Bot(token="8049424222:AAFhKM19Q9eCxDd9hq2LPBxKAAOA1QnNvC4")
 dp = Dispatcher(bot)
 
 @dp.message_handler()
 async def start(message: types.Message):
-await message.answer("Привет! Это бот для почасового производственного анализа.
+    await message.answer("Привет! Это бот для почасового производственного анализа.
 
 Команды:
 /смена — начать сменный отчёт
