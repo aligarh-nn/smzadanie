@@ -13,9 +13,9 @@ dp = Dispatcher(bot)
 
 @dp.message_handle(Command('start'))
 async def start(message: types.Message):
-    await message.answer("Привет! Это бот для почасового производственного анализа.
+    await message.answer("Привет! Это бот для почасового производственного анализа.)
 
-Команды:
+(Команды:
 /смена — начать сменный отчёт
 /час — внести почасовой результат
 /простой — зафиксировать простой
