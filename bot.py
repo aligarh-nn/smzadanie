@@ -1,3 +1,5 @@
+user$ pyvenv --without-pip ./pyvenv.d          # Create virtual environment this way;
+user$ python -m venv --without-pip ./pyvenv.d  # --OR-- this newer way. Both work.
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
