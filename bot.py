@@ -12,7 +12,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 TOKEN = config['TELEGRAM']['BOT_TOKEN']
-bot = Bot(token="8049424222:AAFhKM19Q9eCxDd9hq2LPBxKAAOA1QnNvC4", parse_mode=ParseMode.HTML)
+bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher(storage=MemoryStorage())
 
 @dp.message(Command("start"))
