@@ -23,13 +23,13 @@ async def start(message: types.Message):
 
 @dp.message(Command('смена'))
 async def смена(message: types.Message):
-    await message.answer("Смена начата. Введите:
-Тип работ (копка/прокладка), бригада, смена")
+    await message.answer("""Смена начата. Введите:
+Тип работ (копка/прокладка), бригада, смена""")
 
 @dp.message(Command('час'))
 async def час(message: types.Message):
-    await message.answer("Введите данные:
-Время, Объём (м), Отклонения")
+    await message.answer("""Введите данные:
+Время, Объём (м), Отклонения""")
 
 @dp.message(Command('простой'))
 async def простой(message: types.Message):
